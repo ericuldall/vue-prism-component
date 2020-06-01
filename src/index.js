@@ -30,7 +30,7 @@ export default {
         `Prism component for language "${language}" was not found, did you forget to register it? See all available ones: https://cdn.jsdelivr.net/npm/prismjs/components/`
       )
     }
-
+    ctx.data.prism = Prism;
     if (inline) {
       return h(
         'code',
